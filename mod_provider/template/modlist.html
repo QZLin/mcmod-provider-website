@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body style="background-color:#CEF6D8;">
+
+<title>IC2&More</title>
+<h1>Welcome to website of IC2&More</h1>
+<p>If you have any problem, send email to <a href="https://mail.163.com">qzlin01@163.com</a></p>
+
+<hr>
+
+<p>The lastest port of minecraft server is <b>{{ port }}</b></p>
+
+<hr>
+
+<h2>Mod list of IC2&More:</h2>
+<b>Last Update Time: {{time}} </b>
+<ul>
+	{% for x,y,z in values %}
+		<!-- <a href="{{ y }}" download="./test.jar">{{ x }}</a> -->
+		<!-- <br> -->
+		<a href="/download/?file={{ x }}&name={{ y }}">{{ z }}</a>
+		<i class="fa fa-download" data-toggle="tooltip"></i></a>
+		<br>
+	{% endfor %}
+<ul/>
+
+</html>

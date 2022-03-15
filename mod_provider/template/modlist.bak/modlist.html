@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Mod list of IC2&More </title>
+<h1>Last Update Time: {{time}} </h1>
+<hr>
+
+<ul>
+	{% for x,y,z in values %}
+		<!-- <a href="{{ y }}" download="./test.jar">{{ x }}</a> -->
+		<!-- <br> -->
+		<a href="/download/?file={{ x }}&name={{ y }}">{{ z }}</a>
+		<i class="fa fa-download" data-toggle="tooltip"></i></a>
+		<br>
+	{% endfor %}
+<ul/>
+
+</html>
